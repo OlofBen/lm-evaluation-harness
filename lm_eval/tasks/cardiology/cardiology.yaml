@@ -4,8 +4,8 @@ output_type: multiple_choice
 training_split: train
 validation_split: train
 test_split: train                 # Dataset split to evaluate
-doc_to_text: !function preprocess_medqa.doc_to_text
-doc_to_target: !function preprocess_medqa.doc_to_target
+doc_to_text: !function utils.doc_to_text
+doc_to_target: !function utils.doc_to_target
 doc_to_choice: [ 'A', 'B', 'C', 'D' ]
 metric_list:
   - metric: acc
